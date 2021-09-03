@@ -5,6 +5,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+}
 h1 , h2 , h3 , h4 , h5 , p {
     margin: 0;
     padding: 0;
@@ -16,7 +19,7 @@ h1 , h2 , h3 , h4 , h5 , p {
 .header {
     position: relative;
     border-bottom: 2px solid #D6C29C;
-    min-height: 575px;
+    min-height: 577px;
     padding: 65px 0 0 125px;
 }
 .header-block {
@@ -119,12 +122,11 @@ h1 , h2 , h3 , h4 , h5 , p {
     line-height: 150%;
     max-width: 509px;
     font-family: 'SFPRODISPLAY'; 
+    padding: 0 20px;
 }
 .footer__ul {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1128px;
-    margin: 100px auto;
+    padding: 0;
+    margin: 20px 0 20px 40px;
 }
 .footer__link {
     list-style: none;
@@ -134,6 +136,10 @@ h1 , h2 , h3 , h4 , h5 , p {
     line-height: 30px;
     color: #AD8454;
     font-family: 'SFPRODISPLAY'; 
+    margin-bottom: 10px;
+}
+.footer__link:last-child {
+    margin-bottom: 0px;
 }
 .footer__link a {
     font-size: 20px;
@@ -143,4 +149,281 @@ h1 , h2 , h3 , h4 , h5 , p {
 }
 .footer__icon {
     margin-right: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+    .header {
+        padding: 65px 0 0 65px;
+    }
+    .header-block {
+        width: 280px;
+    }
+    .header__banner {
+        position: absolute;
+        top: 20%;
+        right: 125px;
+        z-index: 2;
+        width: 350px;
+    }
+    .header__line {
+        width: 500px;
+        height: auto;
+        top: 20%;
+        right: 10%;
+    }
+    .header__title {
+        font-size: 40px;
+    }
+    .header__subtitle {
+        font-size: 25px;
+        max-width: 420px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 65px 0 0 35px;
+    }
+    .header-block {
+        width: 200px;
+    }
+    .header__banner {
+        position: absolute;
+        top: 22%;
+        right: 20px;
+        z-index: 2;
+        width: 300px;
+    }
+    .header__line {
+        width: 350px;
+        height: auto;
+        top: 25%;
+        right: 40px;
+    }
+    .header__title {
+        font-size: 40px;
+    }
+    .header__subtitle {
+        font-size: 25px;
+        max-width: 420px;
+    }
+    .footer__text {
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 65px 0 0 35px;
+    }
+    .header-block {
+        width: 200px;
+    }
+    .header__banner {
+        position: absolute;
+        top: 22%;
+        right: 20px;
+        z-index: 2;
+        width: 300px;
+    }
+    .header__line {
+        width: 350px;
+        height: auto;
+        top: 25%;
+        right: 40px;
+    }
+    .header__title {
+        font-size: 40px;
+    }
+    .header__subtitle {
+        font-size: 25px;
+        max-width: 420px;
+    }
+    .footer__text {
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 25px 25px 0 25px;
+    }
+    .header__logo {
+        margin-bottom: 10px;
+    }
+    .header-block {
+        width: 100%;
+        height: 150px;
+        background-color: #D0DFE8;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-150px);
+    }
+    .header__banner {
+        position: absolute;
+        top: 100%;
+        right: 30%;
+        z-index: 2;
+        width: 300px;
+        transform: translateY(-300px);
+
+    }
+    .header__line {
+        width: 350px;
+        height: auto;
+        top: 50%;
+        right: 30%;
+    }
+    .header__title {
+        font-size: 40px;
+    }
+    .header__subtitle {
+        font-size: 25px;
+        max-width: 100%;
+    }
+    .main {
+        padding-bottom: 50px;
+    }
+    .main__blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__block {
+        margin-bottom: 60px;
+    }
+    .footer__blocks {
+        flex-direction: column;
+    }
+    .footer__img {
+        width: 100%;
+    }
+    .footer__block {
+        width: 100%;
+        min-height: 300px;
+    }
+    .footer__text {
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .header {
+        min-height: 800px;
+    }
+    .header__logo {
+        margin-bottom: 10px;
+    }
+    .header-block {
+        width: 100%;
+        height: 150px;
+        background-color: #D0DFE8;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-150px);
+    }
+    .header__banner {
+        position: absolute;
+        top: 100%;
+        right: 60px;
+        z-index: 2;
+        width: 300px;
+    }
+    .header__line {
+        width: 350px;
+        height: auto;
+        top: 60%;
+        right: 20px;
+    }
+    .header__title {
+        font-size: 35px;
+    }
+    .header__subtitle {
+        font-size: 22px;
+        max-width: 100%;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .header {
+        min-height: 700px;
+    }
+    .header-block {
+        width: 100%;
+        height: 150px;
+        background-color: #D0DFE8;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-150px);
+    }
+    .header__banner {
+        position: absolute;
+        top: 100%;
+        right: 30px;
+        z-index: 2;
+        width: 300px;
+    }
+    .header__line {
+        width: 350px;
+        height: auto;
+        top: 60%;
+        right: 20px;
+    }
+    .header__title {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+    .header__subtitle {
+        font-size: 22px;
+        max-width: 100%;
+    }
+    .footer__block {
+        width: 100%;
+        min-height: 250px;
+    }
+    .footer__ul {
+        margin: 20px;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .header {
+        min-height: 700px;
+        padding: 10px 10px 0 10px;
+    }
+    .header-block {
+        width: 100%;
+        height: 150px;
+        background-color: #D0DFE8;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-150px);
+    }
+    .header__banner {
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        z-index: 2;
+        width: 280px;
+    }
+    .header__line {
+        width: 350px;
+        height: auto;
+        top: 60%;
+        right: 20px;
+    }
+    .header__title {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+    .header__subtitle {
+        font-size: 22px;
+        max-width: 100%;
+    }
+    .footer__block {
+        width: 100%;
+        min-height: 250px;
+    }
+    .footer__ul {
+        margin: 20px;
+    }
+
 }
